@@ -63,7 +63,7 @@ def main():
     generate_word_embedding()
     return
 
-# main()
+main()
 
-model = word2vec.Word2Vec.load('../../word_embedding/wordvec/from_lankadeepa/comments_tagged_300_10')
-check_model_qulity(model, 'නැහැ')
+# model = word2vec.Word2Vec.load('../../word_embedding/wordvec/from_lankadeepa/comments_tagged_300_10')
+# check_model_qulity(model, 'නැහැ')
