@@ -2,4 +2,9 @@
 /.tmp.drivedownload/
 /.tmp.drivedownload/
 /.idea/
-
+/corpus/outsourced_for_tagging/
+/corpus/tagged/
+/corpus/desktop.ini
+/corpus/backup/
+/corpus/
+/Sentiment Analysis/desktop.ini
