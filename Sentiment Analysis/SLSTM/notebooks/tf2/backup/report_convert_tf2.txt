@@ -1,0 +1,181 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 5 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: slstm_with_fasttext_with_skopt.py
+--------------------------------------------------------------------------------
+slstm_with_fasttext_with_skopt.py:236:18: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+slstm_with_fasttext_with_skopt.py:236:18: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+slstm_with_fasttext_with_skopt.py:240:18: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+slstm_with_fasttext_with_skopt.py:240:18: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+slstm_with_fasttext_with_skopt.py:503:30: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'slstm_with_fasttext_with_skopt.py'
+ outputting to 'slstm_with_fasttext_with_skopt_tf2.py'
+--------------------------------------------------------------------------------
+
+234:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+235:18: INFO: Renamed 'tf.contrib.rnn.BasicLSTMCell' to 'tf.compat.v1.nn.rnn_cell.BasicLSTMCell'
+236:18: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+236:18: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+238:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+239:18: INFO: Renamed 'tf.contrib.rnn.BasicLSTMCell' to 'tf.compat.v1.nn.rnn_cell.BasicLSTMCell'
+240:18: WARNING: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib.rnn. (Manual edit required) tf.contrib.rnn.* has been deprecated, and widely used cells/functions will be moved to tensorflow/addons repository. Please check it there and file Github issues if necessary.
+240:18: ERROR: Using member tf.contrib.rnn.DropoutWrapper in deprecated module tf.contrib. tf.contrib.rnn.DropoutWrapper cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+243:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+244:20: INFO: Renamed 'tf.nn.bidirectional_dynamic_rnn' to 'tf.compat.v1.nn.bidirectional_dynamic_rnn'
+281:13: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+281:13: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+284:17: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+284:17: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+286:35: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+288:35: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+290:35: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+292:35: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+294:17: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+294:17: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+295:35: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+296:35: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+297:35: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+298:35: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+300:17: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+300:17: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+301:35: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+302:35: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+303:35: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+304:35: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+306:17: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+306:17: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+307:35: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+308:35: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+309:35: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+310:35: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+312:17: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+312:17: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+313:34: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+314:34: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+315:34: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+316:34: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+318:17: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+318:17: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+319:34: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+320:34: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+321:34: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+322:34: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+324:17: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+324:17: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+325:33: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+326:33: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+327:34: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+328:34: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+329:34: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+330:34: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+334:17: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+334:17: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+335:40: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+336:40: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+338:17: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+338:17: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+339:40: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+340:40: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+342:17: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+342:17: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+343:40: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+344:40: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+346:17: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+346:17: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+347:39: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+348:39: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+349:39: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+353:36: INFO: Renamed keyword argument for tf.expand_dims from dim to axis
+360:14: INFO: Added keywords to args of function 'tf.shape'
+368:34: INFO: Renamed 'tf.random_uniform' to 'tf.random.uniform'
+369:32: INFO: Renamed 'tf.random_uniform' to 'tf.random.uniform'
+375:32: INFO: Added keywords to args of function 'tf.reduce_mean'
+376:30: INFO: Added keywords to args of function 'tf.reduce_mean'
+381:39: INFO: Added keywords to args of function 'tf.reduce_mean'
+400:33: INFO: Renamed keyword argument for tf.nn.softmax from dim to axis
+400:78: INFO: Renamed keyword argument for tf.expand_dims from dim to axis
+405:22: INFO: Added keywords to args of function 'tf.reduce_sum'
+465:23: INFO: Renamed keyword argument for tf.nn.softmax from dim to axis
+483:32: INFO: Changing keep_prob arg of tf.nn.dropout to rate, and recomputing value.
+
+484:30: INFO: Changing keep_prob arg of tf.nn.dropout to rate, and recomputing value.
+
+492:26: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+493:20: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+494:18: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+495:46: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+497:14: INFO: Added keywords to args of function 'tf.shape'
+501:47: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+503:30: INFO: Added keywords to args of function 'tf.nn.embedding_lookup'
+503:30: WARNING: tf.nn.embedding_lookup requires manual check. `partition_strategy` has been removed from tf.nn.embedding_lookup.  The 'div' strategy will be used by default.
+506:32: INFO: Changing keep_prob arg of tf.nn.dropout to rate, and recomputing value.
+
+507:30: INFO: Changing keep_prob arg of tf.nn.dropout to rate, and recomputing value.
+
+513:36: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+514:36: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+516:27: INFO: Added keywords to args of function 'tf.reduce_mean'
+518:37: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+519:37: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+524:36: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+525:36: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+526:27: INFO: Added keywords to args of function 'tf.reduce_sum'
+533:21: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+533:21: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+536:36: INFO: Renamed 'tf.truncated_normal' to 'tf.random.truncated_normal'
+539:37: INFO: Renamed 'tf.truncated_normal' to 'tf.random.truncated_normal'
+542:37: INFO: Renamed 'tf.truncated_normal' to 'tf.random.truncated_normal'
+545:37: INFO: Renamed 'tf.truncated_normal' to 'tf.random.truncated_normal'
+548:27: INFO: Added keywords to args of function 'tf.nn.conv2d'
+548:27: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+556:22: INFO: Added keywords to args of function 'tf.transpose'
+560:28: INFO: Added keywords to args of function 'tf.nn.conv2d'
+560:28: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+568:23: INFO: Added keywords to args of function 'tf.transpose'
+570:28: INFO: Added keywords to args of function 'tf.nn.conv2d'
+570:28: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+580:29: INFO: Added keywords to args of function 'tf.nn.max_pool'
+580:29: INFO: Renamed keyword argument for tf.nn.max_pool from value to input
+580:29: INFO: Renamed 'tf.nn.max_pool' to 'tf.nn.max_pool2d'
+592:36: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+593:36: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+595:37: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+596:37: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+605:35: INFO: Added keywords to args of function 'tf.argmax'
+607:24: INFO: Added keywords to args of function 'tf.reduce_sum'
+611:23: INFO: Added keywords to args of function 'tf.reduce_mean'
+614:14: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+616:14: INFO: Added keywords to args of function 'tf.gradients'
+619:20: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+624:20: INFO: Renamed 'tf.assign' to 'tf.compat.v1.assign'
+773:20: INFO: Renamed 'tf.assign' to 'tf.compat.v1.assign'
+818:30: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+819:18: INFO: tf.random_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+819:18: INFO: Renamed 'tf.random_normal_initializer' to 'tf.compat.v1.random_normal_initializer'
+822:12: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+826:13: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+836:11: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+--------------------------------------------------------------------------------
+
