@@ -12,3 +12,6 @@
 /Sentiment Analysis/Kappa_Calculate/
 /Sentiment Analysis/SLSTM/.idea/
 /Sentiment Analysis/Sentiment_Tagger_Recreation/Logistic_Regression/
+*.ini
+/Sentiment Analysis/CNN RNN/experiments/
+/Sentiment Analysis/CNN RNN/backup
