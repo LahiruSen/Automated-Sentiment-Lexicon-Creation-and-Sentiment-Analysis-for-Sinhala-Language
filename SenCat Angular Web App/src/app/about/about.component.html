@@ -1,0 +1,40 @@
+<div class="container">
+  <br>
+  <div id="about">
+    <h1>About</h1>
+    <p>
+      This platform allows you to find sentiments (subjective information) of Sinhala and English texts using novel deep learning models.
+      All you need is to call an API request containing your text string. Our backend will then process the text and give you the sentiment.
+    </p>
+  </div>
+
+  <br>
+  <div id="team">
+    <h1>Our Team</h1>
+    <p>
+      We're a group of final year undergraduates of University of Moratuwa (Sri Lanka) with the passion for deep learning and
+      Natural Language Processing.
+    </p>
+    <div class="row">
+      <div class="col-sm" *ngFor="let member of members">
+        <div class="card">
+          <img [src]="member.imgURL" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{ member.name }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div id="publications">
+    <h1>Publications</h1>
+    <ul>
+      <li><a href="https://ieeexplore.ieee.org/document/9185327">Sentiment Analysis of Sinhala News Comments using Sentence-State LSTM Networks</a></li>
+      <li>Sinhala Sentiment Lexicon Generation Using Word Similarity</li>
+      <li>Sentiment Analysis for Sinhala Language using Deep Learning Techniques</li>
+      <li>Dual States Capsule Network for Text Classification</li>
+    </ul>
+  </div>
+</div>
