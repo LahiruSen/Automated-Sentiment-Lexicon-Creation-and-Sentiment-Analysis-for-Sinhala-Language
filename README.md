@@ -1,5 +1,6 @@
 # Sinhala Language Lexicon Generation and Sentiment Analysis
 
+For now, cite our follwing papers if the work find useful:
 ```
 @article{senevirathne2020sentiment,
   title={Sentiment Analysis for Sinhala Language using Deep Learning Techniques},
